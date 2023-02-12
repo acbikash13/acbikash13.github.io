@@ -1,0 +1,69 @@
+:root  {
+    --backgroundcolor : linear-gradient(to left,#252020,#381147);
+    --backgroundColorImage : linear-gradient(to bottom right,#5761B2,#1FC5A8)
+    
+}
+
+html {
+    height: 95%;
+    width: 1005;
+}
+
+body {
+    background-image:  var(--backgroundcolor)
+
+}
+@media screen and (max-width: 600px) {
+    body{
+        background-image: var(--backgroundColorImage);
+    }
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+}
+
+nav {
+    background-image:  var(--backgroundcolor);
+
+}
+@media screen and (max-width: 600px) and (min-width: 900) {
+    .BioAndPic {
+        background-image: var(--backgroundColorImage);
+    }
+}
+#mypicture {
+    width: 50%;
+    float: right;
+    
+}
+#about{
+    display: flex;
+    justify-content: end;
+    margin-left: 15px;
+    float: right;
+   
+}
+#bio {
+    margin-left: 15px;
+}
+a {
+    text-decoration: none;
+}
+.footercontainer {
+    display: flex;
+    justify-content:space-between
+   
+    
+}
+.contact {
+    color: white;
+    font: small;
+    margin-left: 15px;
+    margin-bottom: 15px;
+
+}
+.socialMedia {
+    margin-right: 5%;
+}
