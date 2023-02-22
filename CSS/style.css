@@ -1,0 +1,158 @@
+:root  {
+    --backgroundcolor : linear-gradient(to left,#d4cbcb,#f7f0f8);
+    --backgroundColorImage : linear-gradient(to bottom right,#5761B2,#1FC5A8)
+    
+}
+
+html {
+    height: 95%;
+    width: 1005;
+    color: black;
+}
+
+body {
+    background-image:  var(--backgroundcolor);
+    margin-left: 10%;
+    margin-right: 10%;
+}
+@media screen and (max-width: 600px) {
+    body{
+        background-image: var(--backgroundColorImage);
+    }
+}
+.container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    
+}
+
+navigation {
+    background-image:  var(--backgroundcolor);
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+@media screen and (max-width: 600px) and (min-width: 900) {
+    .BioAndPic {
+        background-image: var(--backgroundColorImage);
+    }
+}
+#mypicture {
+    width: 50%;
+    float: right;
+    
+}
+#about{
+    display: flex;
+    justify-content: end;
+    margin-left: 15px;
+    float: right;
+   
+}
+#bio {
+    margin-left: 15px;
+}
+a {
+    text-decoration: none;
+}
+.footercontainer {
+    display: flex;
+    justify-content:space-between
+   
+    
+}
+.contact {
+    color: white;
+    font: small;
+    margin-left: 15px;
+    margin-bottom: 15px;
+
+}
+.socialMedia {
+    margin-right: 5%;
+}
+input{
+    width: 50%;
+}
+
+.flipcard {
+    
+}
+.flipcard
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 20% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 14px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 100% center;
+  }
+}
+
+/* Css for flip cards for top 3 skills */
+
+
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 80%;
+    border: 1px solid #f1f1f1;
+    /* perspective: 1000px; Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: rgb(64, 5, 104);
+    color: white;
+    transform: rotateY(180deg);
+  }
