@@ -5,8 +5,7 @@ body {
     font-family:'Roboto';
   }
 p, h1{
-  color: white;
-  font:80px;
+  color: black;
 }
 .main {
     background-image:url("/img/background.gif");
@@ -72,12 +71,24 @@ p, h1{
 }
 /* For about section */
 
-#about {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
+.about {
+    padding-top: 10vh;
+    
+}
+#intro {
+    font-weight: 800;
+    font-size: 250%;
+}
+#words{
+    height: 50%;
+    width: 70%;
+    border: solid 1px rgb(231, 219, 219);
+    box-shadow:  5px 5px 5px 5px rgb(207, 193, 193) ;
+    border-radius: 20px;
+}
+.adj {
+    font-size: 250%;
+    font-weight: 200%;
 }
 .card {
     margin: 0 auto;
