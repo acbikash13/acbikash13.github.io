@@ -15,7 +15,7 @@ p, h1{
     background-position: center center;
      background-attachment: fixed;
     animation: animateBackground 10s linear infinite;
-    color: #e5e5e5;
+    color: white;
     font-size: 2.26rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     height: 100vh;
@@ -71,9 +71,6 @@ p, h1{
   100% {margin-top: 0;}
 }
 /* For about section */
-.container-fluid {
-    background-color: rgba(248, 243, 243, 0.897);
-}
 
 #about {
     display: flex;
@@ -92,7 +89,7 @@ p, h1{
     text-align: center;
 }
 #profilePicture{
-    background-color: rgb(240, 181, 181);
+    background-color: white;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
     height: 70vh;
