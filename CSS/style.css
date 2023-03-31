@@ -19,8 +19,9 @@ body {
     height: 100vh;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:flex-start;
     justify-content: center;
+    padding-left: 10%;
   
 }
 /*  For animinations in the main page */
@@ -71,7 +72,7 @@ body {
 /* For about section */
 
 .about {
-    padding-top: 10vh;  
+    padding-top: 5vh;  
 }
 .aboutMe{
     display: flex;
@@ -80,11 +81,18 @@ body {
     height: 15vh;
 }
 .me{
-    height: 90%;
-    font-size: 5vh;
+    font-weight: 400%;
+    font-size: 250%;
+    text-decoration: underline;
+    text-underline-offset: 10px;
+    color:rgb(13,110,253);
 }
 .line {
     height: 10%;
+}
+#intro{
+    font-weight: 400%;
+    font-size: 250%;
 }
 
 h1{
@@ -97,20 +105,13 @@ h1{
     padding-top: 1px;
     color: antiquewhite;
 }
-#intro{
-    font-weight: 400%;
-    font-size: 250%;
-}
-#words{
-    border: solid 1px rgb(231, 219, 219);
-    box-shadow:  5px 5px 5px 5px rgb(207, 193, 193) ;
-    border-radius: 20px;
-    height: 20vh;
-    width: 50vh;
+.card {
+    height: 63%;
 }
 .adj {
     font-size:medium;
     color:black;
+    text-align:start;
     
 
 }
