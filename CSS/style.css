@@ -90,14 +90,12 @@ body {
 .line {
     height: 10%;
 }
+
 #intro{
     font-weight: 400%;
     font-size: 250%;
 }
 
-h1{
-
-}
 #myName {
     font-weight: 400%;
     font-size: 250%;
@@ -112,11 +110,11 @@ h1{
     font-size:medium;
     color:black;
     text-align:start;
-    
-
 }
 
-
+.profilePicture {
+    padding-left: 25vh;
+}
 #profilePicture{
     border: solid rgb(244, 239, 239) 5px;
     border-radius: 10px;
