@@ -1,12 +1,11 @@
 /* Cor animation text in the First seciton */
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
+
 body {
-    
     font-family:'Roboto';
+   
   }
-p, h1{
-  color: black;
-}
+
 .main {
     background-image:url("/img/background.gif");
     background-repeat: no-repeat;
@@ -72,38 +71,60 @@ p, h1{
 /* For about section */
 
 .about {
-    padding-top: 10vh;
-    
+    padding-top: 10vh;  
 }
-#intro {
-    font-weight: 800;
+.aboutMe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 15vh;
+}
+.me{
+    height: 90%;
+    font-size: 5vh;
+}
+.line {
+    height: 10%;
+}
+
+h1{
+
+}
+#myName {
+    font-weight: 400%;
+    font-size: 250%;
+    font-family:fantasy;
+    padding-top: 1px;
+    color: antiquewhite;
+}
+#intro{
+    font-weight: 400%;
     font-size: 250%;
 }
 #words{
-    height: 50%;
-    width: 70%;
     border: solid 1px rgb(231, 219, 219);
     box-shadow:  5px 5px 5px 5px rgb(207, 193, 193) ;
     border-radius: 20px;
+    height: 20vh;
+    width: 50vh;
 }
 .adj {
-    font-size: 250%;
-    font-weight: 200%;
+    font-size:medium;
+    color:black;
+    
+
 }
-.card {
-    margin: 0 auto;
-    border: none;
-}
-#title {
-    margin-bottom: 7vh;
-    font-size: 8vh;
-    text-align: center;
-}
+
+
 #profilePicture{
+    border: solid rgb(244, 239, 239) 5px;
+    border-radius: 10px;
     background-color: white;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
-    height: 70vh;
+    width: 290px;
+    height: 369px;
+    padding-top: 50px ;
 }
 .text-primary {
     color: black;
