@@ -1,17 +1,25 @@
 /* Cor animation text in the First seciton */
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 
-body {
+body{
     font-family:'Roboto';
    
   }
-
+header {
+    position: sticky;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+/* header.sticky{
+    background: #3a6cf4;
+} */
 .main {
     background-image:url("/img/background.gif");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center center;
-     background-attachment: fixed;
+    background-attachment: fixed;
     animation: animateBackground 10s linear infinite;
     color: white;
     font-size: 2.26rem;
@@ -24,11 +32,21 @@ body {
     padding-left: 10%;
   
 }
+.socialMed {
+    display: flex;
+    justify-content: flex-start;
+    gap: 35px;
+}
+svg:hover{
+    transform: scale(1.4) ;
+    transition-duration:1s ;
+    
+}
 /*  For animinations in the main page */
 .animation {
     height: 80px;
     overflow:hidden;
-    margin-left: 1rem;
+    
 }
 .animation > div > div {
     font-size: xx-large;
@@ -73,14 +91,29 @@ body {
 
 .about {
     padding-top: 5vh;  
+    width: 100%;
 }
 .aboutMe{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 15vh;
+    height: 30vh;
 }
-.me{
+.aboutme-contents {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10vh;
+}
+.aboutme-content-intro {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap:10vh
+}
+.sectionsHeading{
     font-weight: 400%;
     font-size: 250%;
     text-decoration: underline;
@@ -90,7 +123,11 @@ body {
 .line {
     height: 10%;
 }
-
+.aboutme-content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #intro{
     font-weight: 400%;
     font-size: 250%;
@@ -103,32 +140,109 @@ body {
     padding-top: 1px;
     color: antiquewhite;
 }
-.card {
-    height: 63%;
-}
-.adj {
+/* .adj {
     font-size:medium;
     color:black;
     text-align:start;
-}
-
+} */
+/* 
 .profilePicture {
     padding-left: 25vh;
-}
-#profilePicture{
-    border: solid rgb(244, 239, 239) 5px;
-    border-radius: 10px;
-    background-color: white;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    width: 290px;
-    height: 369px;
-    padding-top: 50px ;
+    padding-top: 20px;
+} */
+#profilePicture:hover{
+    transform: scale(1.6) ;
+    transition-duration:1s ;
 }
 .text-primary {
     color: black;
     text-align:justify;
     font-size: larger;
+}
+.activities{
+    height: 90vh;
+    width: 100vh;
+
+}
+.contact{
+    height: 80vh;
+}
+.contacts{
+    display: flex;
+    justify-content: center ;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: auto;
+    gap: 10vh;
+}
+.contacts-items{
+    margin-top: 8vh;
+    height: 30vh;
+    width: 30vh;
+}
+.contacts-items-icons{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.contacts-items-text {
+    display: flex;  
+    justify-content: center;
+    align-items: center ;
+    flex-direction: column;
+    padding-top: 10px;
+}
+/* .addressAndPhone {
+    display: flex;
+}
+.address, .phoneNumber,.emailAddress{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+} */
+.form-content{
+    justify-content: center;
+    align-items: center;
+    width: 90vh;
+    height: 70vh;
+    margin-top:15vh;
+
+
+    /* margin-top:15vh ;
+    margin-left: 10vh;
+    margin-right: 10vh ;
+    height: 60vh; */
+}
+
+form{
+    height: 90vh;
+    padding-left: 10vh;
+    padding-right: 10vh;
+}
+#sendMessage {
+    color: rgb(70, 64, 64);
+    font-size:30px;
+    margin-top: 20px;
+}
+.form-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+
+}
+.form-control {
+    padding-left: 10vh;
+}
+#form-name, #form-email {
+    height: 19%;
+}
+#form-message {
+    height: 30vh;
 }
 footer{
     margin-top: 50px;
