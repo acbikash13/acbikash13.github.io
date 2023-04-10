@@ -24,7 +24,7 @@ header {
     color: white;
     font-size: 2.26rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    height: 100vh;
+    height: 700px;
     display: flex;
     flex-direction: column;
     align-items:flex-start;
@@ -114,7 +114,7 @@ svg:hover{
     justify-content: center;
     flex-direction: column;
     flex-wrap: wrap;
-    gap:10vh
+    gap:50px;
 }
 .sectionsHeading{
     font-weight: 400%;
@@ -180,9 +180,8 @@ svg:hover{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 20px;
+    padding-top: 50px;
     flex-direction: column;
-    gap-col: 50px;
 }
 /* .skills-items {
     display: flex;
@@ -192,7 +191,7 @@ svg:hover{
     flex-shrink: 1.5;
 } */
 .skills-title {
-    Margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
@@ -241,14 +240,8 @@ svg:hover{
   }
 
 
-
-
-
-
-
-
 .contact{
-    height: 80vh;
+    height: 500px
 }
 .contacts{
     display: flex;
@@ -256,12 +249,12 @@ svg:hover{
     align-items: center;
     flex-wrap: wrap;
     overflow: auto;
-    gap: 10vh;
+    gap: 50px;
 }
 .contacts-items{
-    margin-top: 8vh;
-    height: 30vh;
-    width: 30vh;
+    margin-top: 50px;
+    height: 200px;
+    width: 300px;
 }
 .contacts-items-icons{
     display: flex;
@@ -289,9 +282,10 @@ svg:hover{
 .form-content{
     justify-content: center;
     align-items: center;
-    width: 90vh;
-    height: 70vh;
-    margin-top:15vh;
+    width: 600px;
+    height: 600px ;
+    margin-top: 70px;
+    margin-bottom: 30px;
 
 
     /* margin-top:15vh ;
@@ -301,31 +295,35 @@ svg:hover{
 }
 
 form{
-    height: 90vh;
-    padding-left: 10vh;
-    padding-right: 10vh;
+    height: 500px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.sendMessage {
+    margin-bottom: 50px;
 }
 #sendMessage {
     color: rgb(70, 64, 64);
     font-size:30px;
-    margin-top: 20px;
+    margin-top: 30px;
 }
 .form-group {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    gap: 2vh;
+    gap: 30px;
 
 }
 .form-control {
-    padding-left: 10vh;
+    padding-left: 50px;
+    height: 50px;
 }
-#form-name, #form-email {
-    height: 19%;
-}
+/* #form-name, #form-email {
+    height: ;
+} */
 #form-message {
-    height: 30vh;
+    height: 230px;
 }
 footer{
     margin-top: 50px;
