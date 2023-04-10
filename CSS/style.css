@@ -178,27 +178,29 @@ svg:hover{
 .skills{
     background-color: rgb(12, 12, 11);
     display: flex;
+    height: 600px;
     justify-content: center;
     align-items: center;
     padding-top: 50px;
     flex-direction: column;
 }
-/* .skills-items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-shrink: 1.5;
-} */
+
 .skills-title {
     margin-bottom: 40px;
 }
+ @media screen and (max-width:990px) {
+    .skills {
+        height: 1500px;
+    }
+    
+ }
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
     background-color: transparent;
-    height: 320px;
-    border: 1px solid #f1f1f1;
+    height: 300px;
+    border: 0px;
+    border-radius: 20px;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
   }
   
@@ -210,6 +212,8 @@ svg:hover{
     text-align: center;
     transition: transform 0.8s;
     transform-style: preserve-3d;
+    border: 0px;
+    border-radius: 20px;
   }
   
   /* Do an horizontal flip when you move the mouse over the flip box container */
@@ -224,20 +228,37 @@ svg:hover{
     height: 100%;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
+    border: 0px;
+    border-radius: 20px;
   }
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background-color: #bbb;
     color: black;
+    border: 0px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
-  
+  .progress {
+    margin-left: 20px;
+    margin-right:20px ;
+  }
   /* Style the back side */
   .flip-card-back {
     background-color: dodgerblue;
     color: white;
     transform: rotateY(180deg);
+    border: 0px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 50px;
   }
+  
 
 
 .contact{
