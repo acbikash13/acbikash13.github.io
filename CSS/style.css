@@ -143,16 +143,7 @@ svg:hover{
     padding-top: 1px;
     color: antiquewhite;
 }
-/* .adj {
-    font-size:medium;
-    color:black;
-    text-align:start;
-} */
-/* 
-.profilePicture {
-    padding-left: 25vh;
-    padding-top: 20px;
-} */
+
 #profilePicture:hover{
     transform: scale(1.6) ;
     transition-duration:1s ;
@@ -163,18 +154,12 @@ svg:hover{
     font-size: larger;
 }
 .activities, .skills{
-    height: 550px;
+    height: 750px;
     width: 100%;
     background-color: #633974 ;
 
 }
- /* @media screen and (max-width:975px) {
-    .skills {
-        height: 1500px;
-    }
-    
-    
-}  */
+
 .skills{
     background-color: rgb(12, 12, 11);
     display: flex;
@@ -243,8 +228,7 @@ svg:hover{
     flex-direction: column;
   }
   .progress {
-    margin-left: 20px;
-    margin-right:20px ;
+    margin-right: 10%;
   }
   /* Style the back side */
   .flip-card-back {
@@ -258,8 +242,24 @@ svg:hover{
     flex-direction: column;
     gap: 50px;
   }
-  
+  li {
+    text-align: center;
+    font-size: 20px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    list-style-type: none;
 
+  }
+.activities-title {
+    margin-bottom: 30px;
+    margin-top: 20px;
+}
+.carousel{
+    border: 1px solid rgb(251, 244, 244);
+    height: 550px;
+    border-radius: 30px;
+}
 
 .contact{
     height: 500px
@@ -291,15 +291,6 @@ svg:hover{
     flex-direction: column;
     padding-top: 10px;
 }
-/* .addressAndPhone {
-    display: flex;
-}
-.address, .phoneNumber,.emailAddress{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-} */
 .form-content{
     justify-content: center;
     align-items: center;
@@ -307,12 +298,6 @@ svg:hover{
     height: 600px ;
     margin-top: 70px;
     margin-bottom: 30px;
-
-
-    /* margin-top:15vh ;
-    margin-left: 10vh;
-    margin-right: 10vh ;
-    height: 60vh; */
 }
 
 form{
@@ -340,13 +325,13 @@ form{
     padding-left: 50px;
     height: 50px;
 }
-/* #form-name, #form-email {
-    height: ;
-} */
+
 #form-message {
     height: 230px;
 }
 footer{
-    margin-top: 50px;
-    height: 50vh;
+    background-color: black;
+    height: 100px;
+    margin-top: 20px;
+    position: absolute;
 }
