@@ -4,6 +4,7 @@
 body{
     font-family:'Roboto';
     width: 100%;
+    height: 100vh;
 }
 header {
     position: sticky;
@@ -153,8 +154,8 @@ svg:hover{
     text-align:justify;
     font-size: larger;
 }
-.activities, .skills{
-    height: 750px;
+.activities{
+    height: 660px;
     width: 100%;
     background-color: #633974 ;
 
@@ -163,10 +164,10 @@ svg:hover{
 .skills{
     background-color: rgb(12, 12, 11);
     display: flex;
-    height: 600px;
+    height: 700px;
     justify-content: center;
     align-items: center;
-    padding-top: 50px;
+    padding-top: 70px;
     flex-direction: column;
 }
 
@@ -257,15 +258,29 @@ svg:hover{
 }
 .carousel{
     border: 1px solid rgb(251, 244, 244);
-    height: 550px;
+    height: 500px;
     border-radius: 30px;
 }
+.activities-items {
 
-.contact{
-    height: 500px
+}
+.carousel-inner{
+    height: 100%;
+    width: 100%;
+}
+/* .carousel-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+} */
+.contact {
+    margin-top: 60px;
 }
 .contacts{
     display: flex;
+    margin-top: 5px;
     justify-content: center ;
     align-items: center;
     flex-wrap: wrap;
@@ -306,7 +321,7 @@ form{
     padding-right: 50px;
 }
 .sendMessage {
-    margin-bottom: 50px;
+    padding-bottom: 50px;
 }
 #sendMessage {
     color: rgb(70, 64, 64);
@@ -331,7 +346,14 @@ form{
 }
 footer{
     background-color: black;
-    height: 100px;
-    margin-top: 20px;
+    float:bottom;
+    width: 100%;
+    height: 150px;
+    margin-top: 25px;
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
 }
