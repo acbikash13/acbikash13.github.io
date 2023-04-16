@@ -160,7 +160,25 @@ svg:hover{
 
 }
 .activities-items{
-    height:650px;
+    height:500px;
+}
+.activities-items-pics {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.activities-items-descriptions {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+.activities-items-descriptions-text{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .skills{
