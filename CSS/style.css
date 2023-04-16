@@ -7,14 +7,14 @@ body{
     height: 100vh;
 }
 header {
-    position: sticky;
+    position: fixed;
     width: 100%;
-    top: 0;
+    top: 1;
     z-index: 1000;
 }
-/* header.sticky{
-    background: #3a6cf4;
-} */
+header.sticky{
+    background: #9db1e6;
+}
 .main {
     background-image:url("/img/background.gif");
     background-repeat: no-repeat;
@@ -155,10 +155,13 @@ svg:hover{
     font-size: larger;
 }
 .activities{
-    height: 660px;
+    height: 760px;
     width: 100%;
     background-color: #633974 ;
 
+}
+.activities-items{
+    height:650px;
 }
 
 .skills{
@@ -174,6 +177,8 @@ svg:hover{
 .skills-title {
     margin-bottom: 40px;
 }
+
+/* checks the overflow of the activities boxes when shrunk */
  @media screen and (max-width:990px) {
     .skills {
         height: 1500px;
@@ -344,6 +349,8 @@ form{
 #form-message {
     height: 230px;
 }
+
+/* checls the footer section  */
 footer{
     background-color: black;
     float:bottom;
@@ -355,5 +362,4 @@ footer{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
 }
