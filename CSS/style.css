@@ -15,7 +15,7 @@ header.sticky{
     background: #9db1e6;
 }
 .main {
-    background-image:url("/img/background.gif");
+    background-image:url("/img/background/background.gif");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     background-position: center center;
@@ -24,7 +24,7 @@ header.sticky{
     color: white;
     font-size: 2.26rem;
     font-family:Verdana, Geneva, Tahoma, sans-serif;
-    height: 700px;
+    height: 810px;
     display: flex;
     flex-direction: column;
     align-items:flex-start;
