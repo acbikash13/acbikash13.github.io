@@ -1,5 +1,7 @@
 /* Cor animation text in the First seciton */
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
 
 body{
     font-family:'Roboto';
@@ -116,6 +118,9 @@ svg:hover{
     flex-wrap: wrap;
     gap:50px;
 }
+#paragraph-text {
+    font-family: 'Roboto';
+}
 .sectionsHeading{
     font-weight: 400%;
     font-size: 250%;
@@ -139,7 +144,7 @@ svg:hover{
 #myName {
     font-weight: 400%;
     font-size: 250%;
-    font-family:fantasy;
+    font-family: 'Chakra Petch', sans-serif;
     padding-top: 1px;
     color: antiquewhite;
 }
@@ -173,12 +178,14 @@ svg:hover{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    flex-wrap: wrap;
-    flex-basis: auto;
+    flex-wrap:wrap;
 }
 .activities-items-descriptions-text{
     margin-left: 10px;
     margin-right: 10px;
+    font-size: 20px;
+    font-family: 'Chakra Petch', sans-serif;
+    overflow-y: scroll;
 }
 
 
@@ -360,6 +367,19 @@ form{
 
 #form-message {
     height: 230px;
+}
+#goTop {
+    border-radius: 8px;
+    border: 0;
+    height:40px;
+    width: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    float: right;
+    right: 5px;
+    bottom: 10px;
 }
 
 /* checls the footer section  */
