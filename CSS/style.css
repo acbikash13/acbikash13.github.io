@@ -2,7 +2,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Roboto:700');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
-
+@media  screen and (max-width:600px) {
+    body {
+        background-color: antiquewhite;
+    }
+    
+}
+@media  screen and (max-width:900) and (min-width: 600px) {
+    #main {
+        background-color: antiquewhite;
+    }
+    
+}
+@media screen and (min-width: 900px) {
+    footer {
+        background-color: rgb(88, 88, 98);
+    }
+    
+}
 body{
     font-family:'Roboto';
     width: 100%;
@@ -168,7 +185,7 @@ svg:hover{
     height: 700px;
     justify-content: center;
     align-items: center;
-    padding-top: 70px;
+    padding-top: 50px;
     flex-direction: column;
 }
 
@@ -320,7 +337,7 @@ svg:hover{
 .carousel-control-prev,.carousel-control-next{
     height: 20px;
     width: auto;
-    top: 93%;
+    top: 92.5%;
     margin-top: 5px;
 
 }
@@ -422,9 +439,9 @@ form{
     border: 0;
     height:40px;
     width: 50px;
-    /* display: flex;
+    display: flex;
     align-items: center;
-    justify-content: center; */
+    justify-content: center;
     position: fixed;
     float: right;
     right: 5px;
