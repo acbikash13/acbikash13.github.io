@@ -1,9 +1,4 @@
-$(window).scroll(function(){
-    var classes = $("nav").attr("class");
-    classes = classes + " bg-info"
-    var classes = $("nav").css("background-color", classes);
-}) ;
-
+//scroll bar function
 let myButton = document.getElementById("goTop");
 window.onscroll = function() {
     scrollFunction();
@@ -11,12 +6,13 @@ window.onscroll = function() {
  function scrollFunction() {
     if (document.body.scrollTop >400 || document.documentElement.scrollTop > 400) {
         $("#goTop").css("display","block");
-        $(".navbar").css("background-color", "yellow");
-        // console.log("400 ox")
     }
     else  {
         $("#goTop").css("display","none")
-        $(".navbar").css("background-color", "lightblue");
+        // let backgroundColor = $(".navbar").css("background-color");
+
+        // backgroundColor = backgroundColor + " bg-primary"
+        // $(".navbar").css("background-color", backgroundColor);
 
         // console.log("not 400 ox")
     }
@@ -26,14 +22,14 @@ window.onscroll = function() {
         document.documentElement.scrollTop = 0;
     })
  }
-
- $(document).ready(function() {
-    $( ".mr-auto .nav-item" ).bind( "click", function(event) {
-        event.preventDefault();
-        var clickedItem = $( this );
-        $( ".mr-auto .nav-item" ).each( function() {
-            $( this ).removeClass( "active" );
-        });
-        clickedItem.addClass( "active" );
-    });
-});
+// form submit button
+  $(".btn").click(function() {
+    let message =  $(".form-control");
+    let displaymessgae = " "
+    for(let i = 0; i< message.length; i++){
+        displaymessgae += message[i].value + "\n";
+        message[i].value= "";
+   }
+   alert(`Your message has been received with name, email, and message as follows:\n${displaymessgae}`)
+  })
+  
