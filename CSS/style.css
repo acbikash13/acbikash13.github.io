@@ -76,6 +76,11 @@ svg:hover{
     border-radius: 10px;
     background-color:#710a7a;
 }
+.fourth div {
+    border-radius: 10px;
+    background-color:#0a693d;
+}
+
 
 @keyframes text-animation {
   0% {margin-top: 0;}
@@ -159,7 +164,7 @@ svg:hover{
     font-size: larger;
 }
 .activities{
-    height: 760px;
+    height: 785px;
     width: 100%;
     background-color: #633974 ;
 
@@ -295,16 +300,43 @@ svg:hover{
     height: 100%;
     width: 100%;
 }
-.carousel-control-next{
-    right: 15px;
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    height: 50px;
+    gap: 10%;
 }
+.carousel-control-prev,.carousel-control-next{
+    height: 20px;
+    width: auto;
+    top: 95%;
+
+}
+.carousel-control-next {
+    right: 44%;
+}
+.carousel-control-prev {
+left: 40%;
+}
+@media screen and (max-width:780px){
+    .carousel-control-next {
+        right: 39%;
+    }
+    .carousel-control-prev {
+    left: 39%;
+    }
+}
+
 
 .contact {
     margin-top: 60px;
 }
 .contacts{
-    display: flex;
     margin-top: 5px;
+    display: flex;
     justify-content: center ;
     align-items: center;
     flex-wrap: wrap;

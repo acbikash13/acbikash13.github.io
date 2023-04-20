@@ -11,7 +11,7 @@
 </head>
 <body>
   <header class="sticky">
-    <nav class="navbar navbar-expand-lg  navbar-dark bg-primary">
+    <nav class="navbar navbar-expand-lg  navbar-dark">
       <div class="container-fluid">
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -22,6 +22,7 @@
             <a class="nav-link" href="#aboutme">About</a>
             <a class="nav-link" href="#skills">Skills</a>
             <a class="nav-link" href="#activities">Activities</a>
+            <a class="nav-link" href="#contact">Contact Me</a>
             <a class="nav-link" target="_blank"   href="/resume/BikashAResume.pdf">Resume</a>
           </div>
         </div>
@@ -36,7 +37,7 @@
       </p>
     </div>   
     <section class="animation">
-      <div class="first"><div>Software Engineer</div></div>
+      <div class="first"><div>Data Analyst</div></div>
       <div class="second"><div>Web Developer</div></div>
       <div class="third"><div>Programmer</div></div>
     </section>
@@ -300,7 +301,7 @@
       <div id="carouselExampleControls" class="carousel slide col-9 mx-auto bg-light" data-bs-ride="carousel"style="height: 100%; border: 0px ">
         <div class="carousel-inner row">
           <div class="carousel-item col-12">
-            <div class="row" style="height:100%">
+            <div class="row" style="height:auto">
               <div class="col-lg-6 col-sm-12 col-md-12 text-center  bg-white activities-items-pics">
                 <img class="center-block shadow-lg rounded" heigth = 100% width="100%" src="/img/Activities/Nepali Student Organization-2.png" alt="Norse of Nepal">
               </div>
@@ -311,7 +312,7 @@
             </div>
           </div>
           <div class="carousel-item col-12 active">
-            <div class="row" style="height:100%">
+            <div class="row" style="height:auto">
               <div class="col-lg-6 col-sm-12 col-md-12 text-center  bg-white activities-items-pics" >
                 <img class="center-block shadow-lg rounded" height="100%" width="100%" src="/img/Activities/STEMPeerMentor.png" alt="NKU STEM Peer Mentor"></div>
               <div class="col-lg-6 col-sm-12 col-md-12 activities-items-descriptions bg-white rounded">
@@ -322,7 +323,7 @@
             </div>
           </div>
           <div class="carousel-item col-12">
-            <div class="row" style="height:100%">
+            <div class="row" style="height:auto">
               <div class="col-lg-6 col-sm-12 col-md-12 bg-light  text-center activities-items-pics">
                 <img class="center-block  rounded" height = "100%" width="100%" src="/img/Activities/semiconductor.jpeg" alt="Semiconductor">
               </div>
@@ -335,7 +336,7 @@
             </div>
           </div>
           <div class="carousel-item col-12">
-            <div class="row" style="height:100%">
+            <div class="row" style="height:auto">
               <div class="col-lg-6 bg-light col-sm-12 col-md-12 bg-white rounded" >
                 <img class="center-block shadow-lg rounded" height = "100%" width="100%" src="/img/Activities/globalSolarRadiation.png" alt="Semiconductor">
 
@@ -353,23 +354,25 @@
             </div>
           </div> -->
         </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon rounded bg-dark" aria-hidden="true"></span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
-          <span class="carousel-control-next-icon rounded bg-dark" aria-hidden="true"></span>
-        </button>
+        <div class="carousel-controls">
+          <button class="carousel-control-prev bg-dark shadow-lg" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon rounded bg-dark" aria-hidden="true"></span>
+          </button>
+          <button class="carousel-control-next bg-dark " type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon rounded bg-dark" aria-hidden="true"></span>
+          </button>
+        </div>
       </div>
     </div>
   </div>
 
   <!-- forms and contact -->
-  <div class="container-fluid contact">
+  <div class="container-fluid contact" id="contact" >
     <div class="row">
       <div class="col-12">
         <div class="row">
           <div class="col-12 aboutMe mt-4">
-            <p class="sectionsHeading"  >Contact Me</p>
+            <p class="sectionsHeading">Contact Me</p>
           </div>
           <div class="contacts">
             <div class="contacts-items">
@@ -430,13 +433,15 @@
     <p  class="text-white font-weight-bold">Bikash Acharya</p>
     <p class="text-white font-weight-bold">Copyright @2023. All rights reserved.</p>
   </footer>
-  <div>
-    <button id="goTop" class="bg-primary">
-      <svg xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="white" class="bi bi-arrow-up" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
-      </svg>
-    </button>
-  </div>
+<div>
+  <button id="goTop" class="bg-primary">
+    <svg xmlns="http://www.w3.org/2000/svg" width="50" height="30" fill="white" class="bi bi-arrow-up" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/>
+    </svg>
+  </button>
+</div> 
+    
+
 
 
 
