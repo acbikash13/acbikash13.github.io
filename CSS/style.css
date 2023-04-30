@@ -144,6 +144,7 @@ svg:hover{
 .sectionsHeading{
     font-weight: 400%;
     font-size: 250%;
+    font-family: 'Roboto';
     text-decoration: underline;
     text-underline-offset: 10px;
     color:rgb(13,110,253);
